@@ -1,0 +1,23 @@
+{
+  "name": "god-mobile",
+  "version": "1.0.0",
+  "description": "God 手机版",
+  "private": false,
+  "keywords": [],
+  "scripts": {
+    "dev": "cooking watch",
+    "dist": "cooking build -p",
+    "deploy": "cooking build --no-color"
+  },
+  "author": "huijian.lu@ele.me",
+  "license": "MIT",
+  "dependencies": {
+    "mint-ui": "^0.2.8",
+    "vue": "*",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-component": "^0.3.3",
+    "babel-runtime": "^6.11.6"
+  }
+}
