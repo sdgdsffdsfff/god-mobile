@@ -6,12 +6,20 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 const state = {
-  user: {}
+  user: {},
+  sites: []
 };
 
 const mutations = {
   SET_USER(state, user) {
-    state.user = user;
+    state.user = {
+      name: user.name,
+      mobile: user.mobile,
+      email: user.email,
+      dayReport: user.dayReport,
+      errorReport: user.errorReport
+    };
+    state.sites = user.site;
   }
 };
 

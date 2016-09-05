@@ -11,13 +11,18 @@ cooking.set({
   // production
   clean: true,
   hash: true,
-  sourceMap: true,
+  sourceMap: false,
   chunk: 'vendor',
   publicPath: '/',
   assetsPath: 'static',
   urlLoaderLimit: 10000,
   extractCSS: '[name].[contenthash:7].css',
   extends: ['vue', 'lint', 'sass']
+});
+
+cooking.add('loader.md', {
+  test: /\.md$/,
+  loader: 'vue-markdown'
 });
 
 cooking.add('resolve.alias', {

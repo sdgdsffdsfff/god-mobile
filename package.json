@@ -12,12 +12,27 @@
   "author": "huijian.lu@ele.me",
   "license": "MIT",
   "dependencies": {
+    "echarts": "^3.2.3",
     "mint-ui": "^0.2.8",
     "vue": "*",
+    "vue-infinite-scroll": "^0.2.3",
+    "vue-touch": "^1.1.0",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "babel-plugin-component": "^0.3.3",
-    "babel-runtime": "^6.11.6"
+    "babel-runtime": "^6.11.6",
+    "vue-markdown-loader": "^0.4.0"
+  },
+  "faas": {
+    "domain": "god",
+    "public": "dist",
+    "description": "god mobile",
+    "author_name": "huijian.lu",
+    "author_email": "huijian.lu@ele.me",
+    "notice": [
+      "huijian.lu@ele.me",
+      "dingheng.huang@ele.me"
+    ]
   }
 }

@@ -5,10 +5,24 @@
 
 <style lang="scss">
   @import 'src/css/var';
+  @import 'src/css/markdown';
 
+  html, body {
+    height: 100%;
+  }
   body {
     margin: 0;
+    box-sizing: border-box;
     background: $bodyColor;
+  }
+  ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+  }
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
   }
   a {
   	text-decoration: none;
@@ -25,6 +39,25 @@
   		font-weight: 300;
   	}
   }
+  .container {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  p {
+    text-align: center;
+  }
+  .mint-tabbar>.mint-tab-item.is-selected {
+    background-color: $mainColor;
+    color: #fff;
+  }
+  .mint-switch-core:checked {
+    border-color: $mainColor;
+    background-color: $mainColor;
+  }
 </style>
 
 <script>
@@ -36,6 +69,9 @@
     store,
     replace: false,
     vuex: {
+      getters: {
+        sites: state => state.sites
+      },
       actions: {
         loadUser
       }

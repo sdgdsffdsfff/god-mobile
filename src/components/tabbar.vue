@@ -3,7 +3,7 @@
     <mt-tab-item
       :id="tab.name"
       v-for="tab in tabs"
-      v-link="{ name: tab.key }">
+      v-link="{ name: tab.key, activeClass: 'is-selected'}">
       <span class="iconfont icon-{{tab.key}}" slot="icon"></span>
       {{tab.name}}
     </mt-tab-item>
